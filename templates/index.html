@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PG Feedback Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+            padding: 10px;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: green;
+            color: white;
+            border: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>PG Feedback Form</h2>
+
+    <form action="/submit" method="post">
+        <label>Name</label>
+        <input type="text" name="name">
+
+        <label>Stay Duration</label>
+        <select name="stay">
+            <option>Less than 1 month</option>
+            <option>1–6 months</option>
+            <option>More than 6 months</option>
+        </select>
+
+        <label>Overall Rating</label>
+        <select name="rating">
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        <label>Cleanliness</label>
+        <select name="cleanliness">
+            <option>Very Clean</option>
+            <option>Clean</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        <label>Food Quality</label>
+        <select name="food">
+            <option>Very Good</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Bad</option>
+        </select>
+
+        <label>Suggestions</label>
+        <textarea name="suggestions"></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+</div>
+
+</body>
+</html>
